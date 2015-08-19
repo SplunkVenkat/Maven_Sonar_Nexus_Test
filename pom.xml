@@ -7,6 +7,33 @@
     <packaging>jar</packaging>
     <version>0.1.0</version>
 
+	
+	<scm>
+        <connection>scm:git:https://github.com/javaee-samples/javaee7-simple-sample.git</connection>
+        <url>https://github.com/javaee-samples/javaee7-simple-sample.git</url>
+        <developerConnection>scm:git:https://github.com/javaee-samples/javaee7-simple-sample.git</developerConnection>
+        <tag>1.13</tag>
+    </scm>
+    <developers>
+        <developer>
+            <name>Kishorr</name>
+            <email>kis@gm.com</email>
+        </developer>
+    </developers>
+    <distributionManagement>
+        <repository>
+            <id>deployment</id>
+            <name>Internal Releases</name>
+            <url>http://localhost:8081/nexus/content/repositories/releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>deployment</id>
+            <name>Internal Snapshot Releases</name>
+            <url>http://localhost:8081/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+	
+	
     <build>
         <plugins>
             <plugin>
